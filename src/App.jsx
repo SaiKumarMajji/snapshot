@@ -56,7 +56,7 @@ export default function App() {
         <button onClick={() => handleButtonClick("mountains")}>
           Mountains
         </button>
-        <button onClick={() => handleButtonClick("beach")}>Beaches</button>
+        <button onClick={() => handleButtonClick("beach")}>Coastlines</button>
         <button onClick={() => handleButtonClick("birds")}>Birds</button>
         <button onClick={() => handleButtonClick("food")}>Food</button>
       </div>
