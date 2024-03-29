@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function Images({ initialImages }) {
+const Images = ({ initialImages }) => {
+  console.log("Initial Images:", initialImages);
+
+  if (!initialImages || initialImages.length === 0) {
+    return <div>No images found</div>;
+  }
+
   return (
     <div className="image-container">
       {initialImages.map((image) => (
@@ -14,4 +20,6 @@ export default function Images({ initialImages }) {
       ))}
     </div>
   );
-}
+};
+
+export default Images;

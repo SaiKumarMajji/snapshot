@@ -18,6 +18,7 @@ export default function App() {
         );
 
         setSearchedImages(response.data.photos.photo);
+
         setSearchQuery(query);
       } else {
         setSearchedImages([]);
@@ -56,7 +57,9 @@ export default function App() {
         <button onClick={() => handleButtonClick("mountains")}>
           Mountains
         </button>
-        <button onClick={() => handleButtonClick("beach")}>Coastlines</button>
+        <button onClick={() => handleButtonClick("coastlines")}>
+          Coastlines
+        </button>
         <button onClick={() => handleButtonClick("birds")}>Birds</button>
         <button onClick={() => handleButtonClick("food")}>Food</button>
       </div>
